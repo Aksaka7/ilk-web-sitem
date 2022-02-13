@@ -1,0 +1,79 @@
+.hero{
+    position: relative;
+    background-color: var(--overlay);
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero::before{
+    content:'';
+    background: url('./images/hero.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero .content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero .content p:first-child{
+     
+    font-size: .8rem;
+}
+
+.hero .content p:nth-child(2){
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.hero .content p:nth-child(3){
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.hero .content p:nth-child(4){
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.hero .button {
+    margin: 1rem 0;
+    font-weight: 500;
+    width: 300px;
+    color: #Fff;
+}
+
+.hero .button:hover {
+    margin: 1rem 0;
+    width: 300px;
+    color: #000;
+}
+
+
+
+
+
+@media screen and(max-width:940px) {
+    
+       
+    .hero .content p:nth-child(3){
+        font-size: 2.5rem;
+       
+    }
+    
+    .hero .content p:nth-child(4){
+        font-size: 1.6rem;
+    }
+}
+

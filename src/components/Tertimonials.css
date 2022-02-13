@@ -1,0 +1,122 @@
+img{
+    width: 80px;
+}
+
+
+.tertimonials{
+    width: 100%;
+
+    padding:0.9rem  0;
+}
+
+.tertimonials .container{
+    width: 1250px;
+    margin: 5rem auto;
+    padding: 1.5rem 0rem;
+}
+
+.tertimonials h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.tertimonials .container .content {
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 3rem 0;
+}
+
+.tertimonials .card{
+    
+    border: 1px solid #eee;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 5px 35px rgb(0,0,0,.2);
+    padding: 1rem;
+}
+
+.tertimonials img{
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin-top: -2rem;
+}
+
+.tertimonials .content .card .boy{
+ width: 75px;
+ height: 75px;
+ border-radius: 50px;
+ -webkit-border-radius: 50px;
+ -moz-border-radius: 50px;
+ -ms-border-radius: 50px;
+ -o-border-radius: 50px;
+}
+
+.tertimonials .card p{
+    color: #787878;
+    font-size: 1.2rem;
+    margin:12px;
+}
+
+.tertimonials .card span{
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width:940px){
+
+    .tertimonials{
+        width: 100%;
+    
+        padding-top:.5rem;
+    }
+    .tertimonials .container{
+        width: 100%;
+    }
+ 
+    .tertimonials .container .content{
+        grid-template-columns: 2, 1fr;
+    }
+ 
+    .tertimonials .card{
+     max-width: 100%;
+     margin: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width:1040px){
+    .tertimonials .container{
+        width: 100%;
+    }
+ 
+    .tertimonials .container .content{
+        grid-template-columns: 1fr;
+    }
+ 
+    .tertimonials .card{
+    
+     max-width: 100%;
+     margin: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width:940px){
+    
+     .tertimonials .card{
+     
+     max-width: 100%;
+     margin: 3rem;
+    }
+}

@@ -1,0 +1,32 @@
+.couser{
+    width: 100%;
+    padding:2rem;
+}
+
+.orta{
+    margin: 0 auto;   
+    text-align: center;
+}
+
+.container{
+    width: 1250px;   
+} 
+
+.content{
+    display: flex;
+}
+.colon{
+    width: 625px ;
+    font-size:13px;
+    padding: 20px;
+    flex-direction: column; 
+    align-items:baseline;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:940px){
+    .content {
+        flex-direction: column;
+      }
+    
+}
